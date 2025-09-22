@@ -1,3 +1,4 @@
+import logo from "./pictures/logo.jpg";
 
 const About = () => {
     return (
@@ -6,19 +7,20 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                alt="Salon Interior"
-                className="absolute inset-0 w-full h-full object-cover"
+                src={logo}
+                alt="Om Logo"
+                className="absolute inset-0 w-full h-full object-contain bg-white"
               />
+
             </div>
             
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About LuxeLocks</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Indian Cultural Services</h2>
               <p className="text-lg text-gray-600 mb-6">
-                With over a decade of experience, LuxeLocks Hair Salon has been transforming looks and boosting confidence through expert hair styling and care. Our team of skilled professionals is dedicated to providing you with the perfect look that matches your personality and lifestyle.
+                Indian Cultural Services aims to create a space where people can find pujaris and mandirs in their local area. This is to provide greater access to those who are looking to connect with the local Hindu community and find various events around them.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                We believe in using only the finest products and staying current with the latest trends and techniques to ensure you receive the best possible service.
+                We believe in creating an amazing experience for those who are looking to engage in spaces for their families within the community. 
               </p>
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>

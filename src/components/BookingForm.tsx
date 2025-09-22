@@ -15,7 +15,6 @@ const BookingForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
-    // Here you would typically handle the form submission
   };
 
   if (submitted) {
@@ -23,7 +22,7 @@ const BookingForm = () => {
       <div className="text-center py-12">
         <h3 className="text-2xl font-bold text-gray-900 mb-4">Thank You!</h3>
         <p className="text-gray-600">
-          Your appointment request has been received. We'll contact you shortly to confirm your booking.
+          Your information has been received. Someone will reach out to you soon!
         </p>
       </div>
     );
@@ -33,7 +32,7 @@ const BookingForm = () => {
     <section id="booking" className="py-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
-          Book Your Appointment
+          Request Information
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -122,11 +121,11 @@ const BookingForm = () => {
               value={formData.service}
               onChange={(e) => setFormData({ ...formData, service: e.target.value })}
             >
-              <option value="">Select a service</option>
-              <option value="haircut">Haircut</option>
-              <option value="coloring">Coloring</option>
-              <option value="styling">Styling</option>
-              <option value="treatment">Treatment</option>
+              <option value="">Select what you need information on</option>
+              <option value="puja">Puja</option>
+              <option value="pandits">Pandits</option>
+              <option value="mandirs">Mandirs</option>
+              <option value="other">Other</option>
             </select>
           </div>
 
@@ -135,7 +134,7 @@ const BookingForm = () => {
               type="submit"
               className="w-full bg-red-600 text-white py-3 px-4 rounded-md hover:bg-red-700 transition-colors"
             >
-              Book Appointment
+              Request Information
             </button>
           </div>
         </form>

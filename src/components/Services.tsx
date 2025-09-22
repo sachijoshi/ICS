@@ -3,23 +3,23 @@ import { Scissors, Palette, Wind, Sparkles } from 'lucide-react';
 const services = [
   {
     icon: <Scissors className="w-8 h-8" />,
-    title: 'Haircuts',
-    description: 'Expert cuts tailored to your style and face shape',
+    title: 'Pujas',
+    description: 'Different services including Satyanarayan puja, Ghrah Pravesh, Car Puja, etc.',
   },
   {
     icon: <Palette className="w-8 h-8" />,
-    title: 'Coloring',
-    description: 'Professional color services from subtle to bold',
+    title: 'Mandirs',
+    description: 'Find different mandirs in the Massachusetts area',
   },
   {
     icon: <Wind className="w-8 h-8" />,
-    title: 'Styling',
-    description: 'Perfect styling for any occasion',
+    title: 'Pandits',
+    description: 'Find different pandits in the local area',
   },
   {
     icon: <Sparkles className="w-8 h-8" />,
-    title: 'Treatments',
-    description: 'Revitalizing treatments for healthy hair',
+    title: 'Events',
+    description: 'Find different cultural events in the area',
   },
 ];
 
@@ -29,7 +29,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-          <p className="text-lg text-gray-600">Experience the best in hair care and styling</p>
+          <p className="text-lg text-gray-600">Find different mandirs and pandits in the area</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

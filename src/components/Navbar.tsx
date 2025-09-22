@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,18 +22,21 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-red-600">LuxeLocks</span>
+            <span className="text-2xl font-bold text-red-600">Indian Cultural Services</span>
           </div>
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              <a href="#services" className="text-gray-800 hover:text-red-600 transition-colors">Services</a>
-              <a href="#about" className="text-gray-800 hover:text-red-600 transition-colors">About</a>
-              <a href="#gallery" className="text-gray-800 hover:text-red-600 transition-colors">Gallery</a>
-              <a href="#booking" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors">
-                Book Now
-              </a>
-            </div>
+            <a href="/#about">About</a>
+            <Link to="/pandit" className="text-gray-800 hover:text-red-600">Pandit</Link>
+            <Link to="/mandirs" className="text-gray-800 hover:text-red-600">Mandirs</Link>
+            <a href="/#booking" className="bg-red-600 text-white px-4 py-2 rounded-md">Request Info</a>
+
+
+
+
+          </div>
+
           </div>
 
           <div className="md:hidden">
