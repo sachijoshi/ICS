@@ -5,22 +5,25 @@ import About from "./components/About";
 import BookingForm from "./components/BookingForm";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
-import Contact from "./components/Mandirs"; 
+import Contact from "./components/Mandirs";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ICS">
       <Navbar />
       <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Services />
-            <About />
-            <BookingForm />
-            <Footer />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Services />
+              <About />
+              <BookingForm />
+              <Footer />
+            </>
+          }
+        />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
