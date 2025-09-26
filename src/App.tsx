@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -9,9 +9,10 @@ import Contact from "./components/Mandirs";
 
 function App() {
   return (
-    <Router basename="/ICS">
+    <Router>
       <Navbar />
       <Routes>
+        {/* Homepage */}
         <Route
           path="/"
           element={
@@ -24,6 +25,7 @@ function App() {
             </>
           }
         />
+        {/* Contact / Mandirs Page */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
